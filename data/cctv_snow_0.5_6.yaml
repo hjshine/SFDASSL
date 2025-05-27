@@ -1,0 +1,15 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /data1/datasets/aihub/101_cctv/class_6
+
+source: /data1/datasets/aihub/101_cctv/class_6/normal/train
+train_all: /data1/datasets/aihub/101_cctv/class_6/snow/train
+train: /data1/datasets/aihub/101_cctv/class_6/snow/train_labeled_0.5.txt
+train_unlabel : /data1/datasets/aihub/101_cctv/class_6/snow/train_unlabeled_99.5.txt
+val: /data1/datasets/aihub/101_cctv/class_6/snow/test
+test: /data1/datasets/aihub/101_cctv/class_6/snow/test
+test_source: /data1/datasets/aihub/101_cctv/class_6/normal/test
+test_target: /data1/datasets/aihub/101_cctv/class_6/snow/test
+
+# Classes
+nc: 6  # number of classes
+names: [ 'person', 'car', 'truck', 'bus', 'bicycle', 'motorcycle']  # class names

@@ -1,0 +1,14 @@
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+# train: ./dataset/train.txt
+# val: ./dataset/val.txt
+# test: ./dataset/test.txt
+train: /data1/datasets/aihub/101_cctv/class_6/normal/train
+test: /data1/datasets/aihub/101_cctv/class_6/normal/test
+val: /data1/datasets/aihub/101_cctv/class_6/normal/test
+test_source: /data1/datasets/aihub/101_cctv/class_6/normal/test
+test_target: /data1/datasets/aihub/101_cctv/class_6/snow/test
+
+# Classes
+nc: 6  # number of classes
+names: [ 'person', 'car', 'truck', 'bus', 'bicycle', 'motorcycle']  # class names

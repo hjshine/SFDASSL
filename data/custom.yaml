@@ -1,0 +1,22 @@
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+# train: ./dataset/train.txt
+# val: ./dataset/val.txt
+# test: ./dataset/test.txt
+
+# normal train
+train: /data1/datasets/cityscapes/CityScapes/yolov5_format/images/train
+test: /data1/datasets/cityscapes/CityScapes/yolov5_format/images/val
+val: /data1/datasets/cityscapes/CityScapes/yolov5_format/images/val
+test_source: /data1/datasets/cityscapes/CityScapes/yolov5_format/images/val
+test_target: /data1/datasets/cityscapes/CityScapesFoggy/yolov5_format/images/val
+
+# # foggy train
+# train: /data1/datasets/cityscapes/CityScapesFoggy/yolov5_format/images/train
+# test: /data1/datasets/cityscapes/CityScapesFoggy/yolov5_format/images/val
+# val: /data1/datasets/cityscapes/CityScapesFoggy/yolov5_format/images/val
+
+
+# Classes
+nc: 8  # number of classes
+names: [ 'bus', 'bicycle', 'car', 'motorcycle', 'person', 'rider', 'train', 'truck' ]  # class names

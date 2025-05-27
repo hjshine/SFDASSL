@@ -1,0 +1,15 @@
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+
+source: /data1/datasets/sim10k/yolo_format/images/train
+train_all: /data1/datasets/cityscapes/CityScapes/car/yolov5_format/images/train
+train: /data1/datasets/cityscapes/CityScapes/car/yolov5_format/images/train
+val: /data1/datasets/cityscapes/CityScapes/car/yolov5_format/images/val
+test: /data1/datasets/cityscapes/CityScapes/car/yolov5_format/images/val
+
+test_source: /data1/datasets/sim10k/yolo_format/images/test
+test_target: /data1/datasets/cityscapes/CityScapes/car/yolov5_format/images/val
+
+# Classes
+nc: 1  # number of classes
+names: ['car']  # class names
